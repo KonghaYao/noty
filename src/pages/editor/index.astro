@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/BlogPost.astro";
+import { Editor } from "../../app/editor";
 ---
 
 <Layout
@@ -8,4 +9,8 @@ import Layout from "../../layouts/BlogPost.astro";
     pubDate={new Date("August 08 2021")}
     updatedDate={new Date("August 08 2022")}
     heroImage="/placeholder-about.jpg"
-/>
+>
+    <div class="h-scrren w-screen">
+        <Editor />
+    </div>
+</Layout>
